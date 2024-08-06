@@ -1,0 +1,81 @@
+erDiagram
+
+  Company {
+    int CompanyID PK
+    string CompanyName
+    string CompanyAddress
+    string CompanyEmail
+  }
+
+  Company ||--o{ Opening : ""
+
+  Opening {
+    int OpeningID PK
+    int CompanyID FK
+    int QualificationCode FK
+    string StartDate
+    string EndDate
+    string HourlyPay
+  }
+
+  Opening }o--|| Qualification : ""
+  Opening ||--o{ Placement : ""
+
+
+   Qualification {
+   int QualificationCode PK
+   string QualificationDescription
+   }
+
+   Qualification }o--o{ Candidate : ""
+   Qualification }o--|| Placement : ""
+   Qualification }o--o{ Course : ""
+
+
+  Candidate {
+    int CandidateID PK
+    string Name
+    string CandidateAddress
+    string CandidateEmail
+    string CandidatePhoneNumber
+  }
+
+  Candidate ||--o{ Job_History : ""
+  Candidate }o--|| Course : ""
+
+  Job_History {
+    int JobHistoryID PK
+    int CandidateID FK
+    string JobRecord
+    string JobDescription
+    string StartDate
+    string EndDate
+  }
+  
+  Placement {
+    int PlacementID PK
+    int OpeningID FK
+    int CandidateID FK
+    string TotalHoursWorked
+  }
+
+  Course {
+   int CourseID PK
+   string CourseName
+   int QualificationCode FK
+   string CoursePrerequisites
+  }
+  
+  Session {
+    int SessionID PK
+    int CourseID FK
+    string SessionDate
+    string SessionFee
+    int maxCapacity
+  }
+
+Session }o--|| Course: ""
+Session }o--o{ Candidate: ""
+
+
+
