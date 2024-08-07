@@ -1,0 +1,5 @@
+Many Candidates can have many Qualifications vice versa
+
+Candidates can be in many sessions and sessions have many candidates
+
+Courses are associated with many qualifications and many qualifications are included in many courses.
