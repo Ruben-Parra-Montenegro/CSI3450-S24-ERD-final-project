@@ -1,0 +1,23 @@
+
+Connectivity
+—----
+
+Company to Opening: 1 
+
+Qualification to Opening: 1
+
+Qualification to Course: M
+
+Qualification to Candidate: M
+
+Placement to Qualification: 1
+
+Candidate to Job History: 1
+
+Opening to Placement: 1
+
+Course to Session: 1
+
+Course to Candidate: 1
+
+Session to Candidate: M
