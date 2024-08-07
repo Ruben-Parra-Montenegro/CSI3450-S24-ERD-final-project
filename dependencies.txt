@@ -1,0 +1,23 @@
+
+Mandatory and Optional Dependencies
+  ------
+
+Company to Opening: Mandatory for Opening - Every opening must be associated with a company.
+
+Qualification to Opening: Mandatory for Opening - Every opening must specify a required qualification.
+
+Qualification to Course: Mandatory for Course - Every course must be associated with a qualification. Moreover, every course develops a specific qualification, and some qualifications might be developed through multiple courses.
+
+Qualification to Candidate: Optional for Candidate - Not all candidates will have qualifications.
+
+Placement to Qualification: Mandatory for Placement - Every placement must be associated with a qualification, as each opening requires a specific qualification.
+
+Candidate to Job_History: Optional for Job_History - Not all candidates will have a job history.
+
+Opening to Placement: Mandatory for Placement - Every placement must be associated with an opening.
+
+Course to Session: Mandatory for Session - Every session must be associated with a course.
+
+Course to Candidate: Optional for Candidate - Candidates are not required to register for a course.
+
+Session to Candidate: Optional for Session - Not all sessions will have candidates registered.
