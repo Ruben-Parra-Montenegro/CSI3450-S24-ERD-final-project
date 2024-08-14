@@ -7,3 +7,4 @@ Candidates can be in many sessions and sessions have many candidates
   and session to course: 1:M
 
 Courses are associated with many qualifications and many qualifications are included in many courses.
+- Ends up being resolved through candidate above
