@@ -1,10 +1,9 @@
 Many Candidates can have many Qualifications vice versa
-- Resolve by course to candidate: 1:M 
-  and qualification to candidate: 1:M
+Courses are associated with many qualifications and many qualifications are included in many courses.
+- Resolve by course to qualification: 1:M 
+  and candidate to qualification: 1:M
 
 Candidates can be in many sessions and sessions have many candidates
 - Resolve by candidate to course: 1:M
   and session to course: 1:M
 
-Courses are associated with many qualifications and many qualifications are included in many courses.
-- Ends up being resolved through candidate above
