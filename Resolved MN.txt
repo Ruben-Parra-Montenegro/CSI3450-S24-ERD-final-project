@@ -1,4 +1,6 @@
 Many Candidates can have many Qualifications vice versa
+- Resolve by course to candidate: 1:M 
+  and qualification to candidate: 1:M
 
 Candidates can be in many sessions and sessions have many candidates
 
