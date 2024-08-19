@@ -37,6 +37,7 @@ erDiagram
 
   Candidate {
     int CandidateID PK
+    int OpeningID FK
     string CandidateName
     string CandidateAddress
     string CandidateEmail
