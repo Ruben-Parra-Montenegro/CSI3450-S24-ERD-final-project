@@ -1,0 +1,22 @@
+Entity	Attriubte	Data Type	PK or FK?	Entity	Attribute	Data Type	PK or FK?
+Company	CompanyID	INT(11)	PK	Session	SessionID	INT(11)	PK
+	CompanyName	VARCHAR(255)			CourseID	INT(11)	FK
+	CompanyAddress	VARCHAR(255)			SessionDate	DATE	
+	CompanyEmail	VARCHAR(255)			SessionFee	DECIMAL(10, 2)	
+Opening	OpeningID	INT(11)	PK		maxCapacity	INT(11)	
+	CompanyID	INT(11)	FK	Candidate	CandidateID	INT(11)	PK
+	QualificationCode	VARCHAR(10)	FK		OpeningID	INT(11)	FK
+	StartDate	DATE			Name	VARCHAR(255)	
+	EndDate	DATE			CandidateAddress	VARCHAR(255)	
+	HourlyPay	DECIMAL(10, 2)			CandidateEmail	VARCHAR(255)	
+Qualification	QualificationCode	VARCHAR(10)	PK		CandidatePhoneNumber	VARCHAR(15)	
+	QualificationDescription	VARCHAR(255)		Job_History	JobHistoryID	INT(11)	PK
+Course	CourseID	INT(11)	PK		CandidateID	INT(11)	FK
+	CourseName	VARCHAR(255)			JobRecord	VARCHAR(255)	
+	QualificationCode	VARCHAR(10)	FK		JobDescription	VARCHAR(500)	
+	CoursePrerequisites	VARCHAR(255)			StartDate	DATE	
+					EndDate	DATE	
+				Placement	PlacementID	INT(11)	PK
+					OpeningID	INT(11)	FK
+					CandidateID	INT(11)	
+					TotalHoursWorked	DECIMAL(10, 2)	
